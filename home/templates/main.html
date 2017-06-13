@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<html>
+    <body>
+  <table>
+    <thead>
+      <tr>
+        <th>Publisher</th>
+        <th>#Videos</th>        
+        <th>Views</th>
+        <th>Reactions</th>
+        <th>Comments</th>
+        <th>Shares</th>
+      </tr>
+    </thead>
+    <tbody>
+
+{%for b in publisher%}
+      <tr>
+        <td>{{ b.page_name }}</td>
+        <td>{{ b.videos }}</td>
+        <td>{{ b.views }}</td>
+        <td>{{ b.reactions }}</td>
+        <td>{{ b.comments }}</td>
+        <td>{{ b.shares }}</td>
+      </tr>
+{% endfor %}
+
+
+
+       
+    </tbody>
+  </table>
+  <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="{% static "art.js"%}"></script>
+    </body>
+</html>
