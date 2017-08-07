@@ -8,7 +8,7 @@ class StoyoSerializer(serializers.ModelSerializer):
 
 class PublisherSerializer(serializers.ModelSerializer):
     datepub = serializers.DateField(required=False)
-    #update = serializers.DateTimeField(required=False)
+    update = serializers.DateTimeField(required=False)
     page_name = serializers.CharField(required=False)
     title = serializers.CharField(required=False)
     link = serializers.CharField(required=False)
