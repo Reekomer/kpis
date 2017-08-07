@@ -27,3 +27,4 @@ class Publisher(models.Model):
   comments = models.IntegerField(null=True)
   shares = models.IntegerField(null=True)
   views = models.IntegerField(null=True)
+  update = models.DateTimeField(null=True)
