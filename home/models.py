@@ -29,7 +29,7 @@ class Publisher(models.Model):
   views = models.IntegerField(null=True)
   update = models.DateTimeField(null=True)
 
- class Temporary(models.Model):
+class Temporary(models.Model):
   datepub = models.DateField(max_length=30, null=True)
   page_name = models.CharField(max_length=100)
   title = models.CharField(max_length=100)  
