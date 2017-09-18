@@ -28,3 +28,14 @@ class Publisher(models.Model):
   shares = models.IntegerField(null=True)
   views = models.IntegerField(null=True)
   update = models.DateTimeField(null=True)
+
+ class Temporary(models.Model):
+  datepub = models.DateField(max_length=30, null=True)
+  page_name = models.CharField(max_length=100)
+  title = models.CharField(max_length=100)  
+  link = models.CharField(max_length=100,unique=True)
+  reactions = models.IntegerField(null=True)
+  comments = models.IntegerField(null=True)
+  shares = models.IntegerField(null=True)
+  views = models.IntegerField(null=True)
+  update = models.DateTimeField(null=True)
